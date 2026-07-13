@@ -1,20 +1,9 @@
-import {createSlice} from "@reduxjs/toolkit"
-
-const itemsSlice = createSlice ({
-    name: "items",
-    initialState: [],
-
-    reducers: {
-        addInitialItems: (store, action) => {
-            return store;
-        }
-    }
-});
+import { createSlice } from "@reduxjs/toolkit";
 
 const myntraStore = configureStore({
-    reducer: {
-        items: itemsSlice.reducer
-    }
+  reducer: {
+    items: itemsSlice.reducer,
+  },
 });
 
 export default myntraStore;
